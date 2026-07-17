@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'output/**/*.html' # outputフォルダ内のHTMLが更新されたとき
-      - 'output/**/*.pdf'  # PDFも含める場合
   workflow_dispatch: # 手動での再デプロイ用
 
 # GitHub Pagesへのデプロイに必要なアクセス権限を設定
