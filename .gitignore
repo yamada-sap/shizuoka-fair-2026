@@ -1,0 +1,30 @@
+# 巨大ファイルのGit管理除外
+assets/0612_産業フェア_企画書.pdf
+
+# OS一時ファイル
+.DS_Store
+**/.DS_Store
+._*
+.Spellcheck*
+
+# Node.js (今後MarpやVite等でパッケージをインストールした時のため)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (同期スクリプト実行時のキャッシュ除外)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.venv/
+env/
+venv/
+
+# エディタ設定 (VS Code等)
+.vscode/
+.idea/
+*.swp
+*.bak

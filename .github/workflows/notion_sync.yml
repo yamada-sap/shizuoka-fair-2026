@@ -1,0 +1,63 @@
+name: Notion Bilateral Sync
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.md'
+  workflow_dispatch: # 手動トリガー用
+
+permissions:
+  contents: write # GitHub Actionsによるコミット・プッシュを許可
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # すべての履歴を取得
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f scripts/requirements.txt ]; then pip install -r scripts/requirements.txt; fi
+
+      # 【自動トリガー時】MarkdownからNotionへ反映
+      - name: Sync Markdown to Notion
+        if: github.event_name == 'push'
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PAGE_MAP: ${{ secrets.NOTION_PAGE_MAP }}
+        run: python scripts/sync_to_notion.py
+
+      # 【手動トリガー時】NotionからMarkdownへ反映
+      - name: Sync Notion to Markdown
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PAGE_MAP: ${{ secrets.NOTION_PAGE_MAP }}
+        run: python scripts/sync_from_notion.py
+
+      # 【手動トリガー時のみ】Notionからの変更をGitHubリポジトリにコミット＆プッシュ
+      - name: Commit and Push changes
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          # 差分がある場合のみコミットとプッシュを実行
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync content from Notion [skip ci]"
+            git push origin HEAD:${{ github.ref_name }}
+          else
+            echo "No changes to commit"
+          fi

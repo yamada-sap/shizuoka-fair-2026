@@ -1,0 +1,45 @@
+name: Deploy Slides to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'output/**/*.html' # outputフォルダ内のHTMLが更新されたとき
+      - 'output/**/*.pdf'  # PDFも含める場合
+  workflow_dispatch: # 手動での再デプロイ用
+
+# GitHub Pagesへのデプロイに必要なアクセス権限を設定
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同時実行による競合を防ぐための設定
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v3
+
+      # outputフォルダの中身をデプロイ対象としてアップロード
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: './output' # output内のファイル(test_preview.html等)がURLのルートになります
+
+      # GitHub Pagesへデプロイ実行
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
