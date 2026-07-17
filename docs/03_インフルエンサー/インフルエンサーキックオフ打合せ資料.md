@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: portrait-theme
+theme: tiffany-theme
 ---
 
 <!-- _class: title -->

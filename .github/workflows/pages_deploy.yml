@@ -33,8 +33,8 @@ jobs:
       # MarpによるMarkdownからHTMLへの自動ビルド (docsとdiscussionsを別々にビルド)
       - name: Marp Build (Markdown to HTML)
         run: |
-          npx @marp-team/marp-cli@latest --html --theme-set ./docs/portrait-theme.css -I ./docs -O ./output
-          npx @marp-team/marp-cli@latest --html --theme-set ./docs/portrait-theme.css -I ./discussions -O ./output
+          npx @marp-team/marp-cli@latest --html --theme-set ./docs/tiffany-theme.css -I ./docs -O ./output
+          npx @marp-team/marp-cli@latest --html --theme-set ./docs/tiffany-theme.css -I ./discussions -O ./output
 
       # リポジトリのルート全体をデプロイ対象としてアップロード
       - name: Upload artifact

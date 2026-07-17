@@ -1,6 +1,6 @@
 module.exports = {
   html: true,
   themeSet: [
-    './docs/portrait-theme.css'
+    './docs/tiffany-theme.css'
   ]
 };
