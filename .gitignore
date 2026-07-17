@@ -28,3 +28,12 @@ venv/
 .idea/
 *.swp
 *.bak
+
+# 自動ビルドされるHTMLファイル (GitHub Actions側で生成・デプロイされるためローカルは除外)
+*.html
+**/*.html
+!output/ # 必要であればoutputは含む
+
+# 顧客Excelファイル (Git管理除外要請)
+assets/産業フェアしずおか2026_スケジュール管理.xlsx
+assets/★令和８年度 産業フェアしずおか2026運営等業務.xls

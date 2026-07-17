@@ -6,12 +6,33 @@
 - [x] フェーズ 2：2026年新変数の流し込み (`data/2026_config.txt` の更新)
 - [x] フェーズ 3：2026年版書類テキストドラフト生成 (`doc_scaffolder` の起動)
 - [x] フェーズ 4：公式Instagram広告・運用計画 ＆ Google/Yahooディスプレイ広告計画の構築（完了）
-- [x] 組織アップデート：Yamada Digital Partners v1.8.3 組織設計の適用（完了）
 - [x] フェーズ 5：Marpスライド ＆ Mermaid搬入図解生成 (`marp_generator` の起動)
 
 > [!TIP]
 > **エディタ編集画面から各計画書ファイルを開く方法**
 > 各計画書へのリンクは、**`Cmd` + クリック（Mac）** または **`Ctrl` + クリック（Windows）** を押すことで、エディタ内で直接ファイルを開く（ジャンプする）ことができます。
+
+---
+
+## 📱 スマートフォン/PC閲覧用 スライドショー一覧 (GitHub Pages公開中)
+
+Markdownから自動ビルドされた、PCおよびスマートフォン（横画面推奨）でフリックしながら閲覧できるスライドショーです。
+
+### 🚦 進行管理・スケジュール
+* 🚦 **[プロジェクト全体タスク管理簿 (有言実行TODO)](https://yamada-sap.github.io/shizuoka-fair-2026/docs/04_体制・評価/プロジェクト全体タスク管理簿.html)**
+* 📅 **[全体スケジュール・マイルストーン計画書](https://yamada-sap.github.io/shizuoka-fair-2026/docs/04_体制・評価/全体スケジュール_マイルストーン計画書.html)**
+* 📐 **[全体未決課題管理簿 ＆ 出展者関係フロー設計書](https://yamada-sap.github.io/shizuoka-fair-2026/docs/04_体制・評価/全体未決課題管理簿_出展者フロー設計.html)**
+
+### 📝 実務指示・チェックリスト
+* 📋 **[リアル社員向けタスク指示書 (具体的実務指示)](https://yamada-sap.github.io/shizuoka-fair-2026/docs/04_体制・評価/AIからリアル社員への具体的タスク指示書.html)**
+* 🛡 **[AI社員20名・抜け漏れ防止タスクチェックリスト](https://yamada-sap.github.io/shizuoka-fair-2026/docs/04_体制・評価/AI社員20名_抜け漏れ防止タスクチェックリスト.html)**
+
+### 📖 出展者向け公式手引き
+* 🏢 **[【企業ゾーン】出展の手引き2026](https://yamada-sap.github.io/shizuoka-fair-2026/docs/01_出展関係書類/【企業ゾーン】出展の手引き2026.html)**
+* 🌊 **[【地場産業観光ゾーン】出展の手引き2026](https://yamada-sap.github.io/shizuoka-fair-2026/docs/01_出展関係書類/【地場産業観光ゾーン】出展の手引き2026.html)**
+
+### 🤝 打合せ資料
+* 🤝 **[インフルエンサーキックオフ打合せ資料](https://yamada-sap.github.io/shizuoka-fair-2026/discussions/インフルエンサーキックオフ打合せ資料.html)**
 
 ---
 
@@ -21,6 +42,7 @@
 
 ### 📄 主要な統治ファイル
 - **[最高憲法: organization_policy.md](file:///Users/sap220701/Desktop/産業フェア_ローカル/.agents/rules/organization_policy.md)**: 組織目的、SLAルール、回答フォーマットなどを定義。
+- **[監査役: organization_ceo.md](file:///Users/sap220701/Desktop/産業フェア_ローカル/.agents/rules/organization_ceo.md)**: AIのCEO（ファクトチェック・外部公開表現監査役）のアサイン定義。
 - **[名簿: role_registry.md](file:///Users/sap220701/Desktop/産業フェア_ローカル/.agents/rules/role_registry.md)**: 精鋭20名のアサインとRACI責任分界の定義。
 - **[パラメータ: event_parameters.json](file:///Users/sap220701/Desktop/産業フェア_ローカル/event_parameters.json)**: 会期やターゲットなどのグローバル変数を一元管理。
 - **[のびのびワークライフバランス計画書](file:///Users/sap220701/Desktop/産業フェア_ローカル/docs/04_体制・評価/全体スケジュール_マイルストーン計画書.md)**: 残業禁止・2週間バッファ原則などのプロジェクト進行ルールを定義。
@@ -50,11 +72,11 @@
 
 ### 🗺️ RACIレビューパイプライン
 無限レビューを防ぐため、以下の順にバトンを渡す一方向パイプラインを厳守します。
-1. **R (実務AI)** ➔ 2. **C (ペルソナ/地元民レビュー)** ➔ 3. **R (冷徹な監査役)** ➔ 4. **R (AI COO)** ➔ 5. **R (AI EA)** ➔ 6. **A (山田プロデューサー/人間: 最終決裁)**
+1. **R (実務AI)** ➔ 2. **C (ペルソナ/地元民レビュー)** ➔ 3. **R (冷徹な監査役)** ➔ 4. **R (AI COO)** ➔ 5. **R (AI CEO/最終ファクト・表現監査役)** ➔ 6. **R (AI EA)** ➔ 7. **A (山田プロデューサー/人間: 最終決裁)**
 
 ---
 
-## 👥 AI社員（精鋭20名）および役割定義
+## 👥 AI社員および役割定義
 すべての就業規則・指示書は [`.agents/rules/`](file:///Users/sap220701/Desktop/産業フェア_ローカル/.agents/rules/) 配下に格納されています。
 
 | No. | 役割名 | パス | 責任区分 | 主な専門領域 |
@@ -79,6 +101,7 @@
 | 18 | 冷徹な監査役 | [cool_headed_validator.md](file:///Users/sap220701/Desktop/産業フェア_ローカル/.agents/rules/cool_headed_validator.md) | `R` | ドラフトの冷徹な監査、不整合・リスク特定、論点整理 |
 | 19 | 静岡ファミリーペルソナ | [persona_shizuoka_family.md](file:///Users/sap220701/Desktop/産業フェア_ローカル/.agents/rules/persona_shizuoka_family.md) | `C` | 家族（マイママ、タカシパパ他）目線でのUXレビュー |
 | 20 | 地元ローカルご意見番 | [local_neighborhood_observer.md](file:///Users/sap220701/Desktop/産業フェア_ローカル/.agents/rules/local_neighborhood_observer.md) | `C` | シニア・周辺住民（ヨシコおばちゃん他）のローカル目線 |
+| 21 | 最高経営責任者 (AI CEO) | [organization_ceo.md](file:///Users/sap220701/Desktop/産業フェア_ローカル/.agents/rules/organization_ceo.md) | `R` | 対外向け最終ファクトチェック、プロフェッショナル表現推敲 |
 
 ---
 
