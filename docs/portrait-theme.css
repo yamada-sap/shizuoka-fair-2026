@@ -1,19 +1,19 @@
 /*
  * @theme portrait-theme
  * @import 'default'
- * @size A4 210mm 297mm
+ * @size 16:9 1280px 720px
  */
 
 /* ==========================================================================
-   YDPデザイン・アクセシビリティ方針 (デジタル庁DADS準拠) CSSテーマ
+   YDPデザイン・アクセシビリティ方針 (デジタル庁DADS準拠) 16:9 横型スライドテーマ
    ========================================================================== */
 
 section {
-  width: 210mm;
-  height: 297mm;
-  padding: 20mm 15mm;
+  width: 1280px;
+  height: 720px;
+  padding: 50px 80px;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   color: #1a1a1a; /* DADS準拠: 目の疲れを抑えるチャコールグレー */
   background-color: #ffffff;
@@ -21,24 +21,24 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
-  overflow-y: auto; /* ★追加: 画面外にはみ出た場合に縦スクロールで読めるようにし、進行の詰まりを防止 */
+  overflow-y: auto; /* 画面外にはみ出た場合に縦スクロールで読めるようにし、進行の詰まりを防止 */
 }
 
 /* ヘッダー・フッターのアクセシビリティ対応 */
 header {
-  font-size: 12px;
+  font-size: 16px;
   color: #595959;
   border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
   width: 100%;
 }
 
 footer {
-  font-size: 11px;
+  font-size: 14px;
   color: #595959;
   border-top: 1px solid #e0e0e0;
-  padding-top: 5px;
+  padding-top: 8px;
   margin-top: auto;
   width: 100%;
   display: flex;
@@ -47,22 +47,22 @@ footer {
 
 /* 見出しスタイル (コントラスト比 4.5:1 以上の深い青を採用) */
 h1 {
-  font-size: 26px;
+  font-size: 40px;
   color: #003a94; /* DADSプライマリーカラー: デジタルブルー */
-  border-left: 6px solid #003a94;
-  padding-left: 10px;
+  border-left: 8px solid #003a94;
+  padding-left: 15px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 1.3;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 28px;
   color: #003a94;
   border-bottom: 2px solid #003a94;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 h3 {
