@@ -16,11 +16,11 @@ section {
   font-size: 16px; /* ★ トモさん提案: ベースを16pxにして溢れを防止 */
   line-height: 1.6;
   color: #1a1a1a; /* DADS準拠: チャコールグレー */
-  /* ★ プレミアムグラデーション背景 (ティファニーブルー #81d8d0 の淡いグラデ) ＆ 右上へ新マスコットキャラクターをデコレーション配置 */
-  background-image: url("../assets/character.jpg"), linear-gradient(135deg, #ffffff 60%, #e6f7f6 100%);
+  /* ★ プレミアムグラデーション背景 (ティファニーブルー #81d8d0 をベースにした美しいミントグラデ) ＆ 右上へ新マスコットキャラクターを少し大きめにデコレーション配置 */
+  background-image: url("../assets/character.jpg"), linear-gradient(135deg, #ffffff 40%, #dcf5f3 100%);
   background-repeat: no-repeat, no-repeat;
-  background-position: right 40px top 20px, center;
-  background-size: 75px auto, cover;
+  background-position: right 40px top 25px, center;
+  background-size: 100px auto, cover; /* ★ トモさん要望: キャラクターを少し大きく(75px ➔ 100px) */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -29,7 +29,7 @@ section {
   position: relative;
 }
 
-/* スライドの左端にデジタル庁とティファニーブルーをイメージした美しいグラデーションアクセントバーを配置 */
+/* スライドの左端にティファニーブルーをイメージした美しいグラデーションアクセントバーを配置 */
 section::before {
   content: "";
   position: absolute;
@@ -37,17 +37,17 @@ section::before {
   left: 0;
   width: 8px;
   height: 100%;
-  background: linear-gradient(180deg, #003a94 0%, #81d8d0 50%, #d87d00 100%); /* ティファニーブルー融合バー */
+  background: linear-gradient(180deg, #008f87 0%, #81d8d0 60%, #d87d00 100%); /* ディープティファニーブルー融合バー */
 }
 
 /* ヘッダー・フッターのアクセシビリティ・プレミアム対応 */
 header {
   font-size: 14px;
   color: #4b5563;
-  border-bottom: 2px solid #e2e8f0;
+  border-bottom: 2px solid #81d8d0; /* 線もティファニーブルーに変更 */
   padding-bottom: 10px;
   margin-bottom: 25px;
-  width: calc(100% - 90px); /* ★ 右上のキャラクターと被らないように幅を制限 */
+  width: calc(100% - 110px); /* ★ 大きくなったキャラクターと被らないように幅をさらに調整 */
   font-weight: 500;
   letter-spacing: 0.05em;
 }
@@ -55,7 +55,7 @@ header {
 footer {
   font-size: 13px;
   color: #4b5563;
-  border-top: 2px solid #e2e8f0;
+  border-top: 2px solid #81d8d0; /* 線もティファニーブルーに変更 */
   padding-top: 10px;
   margin-top: auto;
   width: 100%;
@@ -64,11 +64,11 @@ footer {
   font-weight: 500;
 }
 
-/* 見出しスタイル (コントラスト比 4.5:1 以上の深い青を採用) */
+/* 見出しスタイル (コントラスト比 4.5:1 以上の深い青緑「ディープティファニーブルー」を採用) */
 h1 {
   font-size: 38px;
-  color: #003a94; /* DADSデジタルブルー */
-  border-left: 10px solid #003a94;
+  color: #008f87; /* ディープティファニーブルー */
+  border-left: 10px solid #81d8d0; /* 明るいティファニーブルーの境界線 */
   padding-left: 20px;
   margin-top: 0;
   margin-bottom: 25px;
@@ -80,8 +80,8 @@ h1 {
 
 h2 {
   font-size: 24px;
-  color: #003a94;
-  border-bottom: 3px solid #003a94;
+  color: #008f87;
+  border-bottom: 3px solid #81d8d0;
   padding-bottom: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -91,7 +91,7 @@ h2 {
 h3 {
   font-size: 18px;
   color: #1a1a1a;
-  border-left: 5px solid #00a29a; /* ティファニーブルー調のコントラスト比適合ターコイズ */
+  border-left: 5px solid #81d8d0; /* ティファニーブルーの境界線 */
   padding-left: 10px;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -117,7 +117,7 @@ li {
 }
 
 li::marker {
-  color: #003a94; /* 箇条書きの点をデジタルブルーにしてお洒落に */
+  color: #008f87; /* 箇条書きの点をティファニーブルーにして統一 */
 }
 
 /* 強調表示 (ユニバーサルカラーの太字 ＆ 色覚特性に配慮した下線) */
@@ -142,11 +142,11 @@ table {
 }
 
 th {
-  background-color: #003a94;
+  background-color: #008f87; /* ヘッダーをティファニーブルーに変更 */
   color: #ffffff;
   font-weight: bold;
   padding: 12px 15px;
-  border: 1px solid #003a94;
+  border: 1px solid #008f87;
   font-size: 15px;
 }
 
@@ -158,7 +158,7 @@ td {
 }
 
 tr:nth-child(even) td {
-  background-color: #f8fafc; /* 行ごとにしま模様にして可読性を向上 */
+  background-color: #e6f7f6; /* 行ごとのしま模様を淡いティファニーブルーに変更して超おしゃれに */
 }
 
 /* コードブロック */
