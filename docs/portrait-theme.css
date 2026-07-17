@@ -16,11 +16,11 @@ section {
   font-size: 16px; /* ★ トモさん提案: ベースを16pxにして溢れを防止 */
   line-height: 1.6;
   color: #1a1a1a; /* DADS準拠: チャコールグレー */
-  /* ★ プレミアムグラデーション背景 ＆ 右下にマスコットキャラクターをデコレーション配置 */
-  background-image: url("../assets/character.png"), linear-gradient(135deg, #ffffff 60%, #eef3fc 100%);
+  /* ★ プレミアムグラデーション背景 (ティファニーブルー #81d8d0 の淡いグラデ) ＆ 右上へ新マスコットキャラクターをデコレーション配置 */
+  background-image: url("../assets/character.jpg"), linear-gradient(135deg, #ffffff 60%, #e6f7f6 100%);
   background-repeat: no-repeat, no-repeat;
-  background-position: right 40px bottom 15px, center;
-  background-size: 65px auto, cover;
+  background-position: right 40px top 20px, center;
+  background-size: 75px auto, cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -29,7 +29,7 @@ section {
   position: relative;
 }
 
-/* スライドの左端にデジタル庁をイメージした美しいグラデーションアクセントバーを配置 */
+/* スライドの左端にデジタル庁とティファニーブルーをイメージした美しいグラデーションアクセントバーを配置 */
 section::before {
   content: "";
   position: absolute;
@@ -37,7 +37,7 @@ section::before {
   left: 0;
   width: 8px;
   height: 100%;
-  background: linear-gradient(180deg, #003a94 0%, #00a3e0 50%, #d87d00 100%); /* DADSプライマリー&アクセントの融合バー */
+  background: linear-gradient(180deg, #003a94 0%, #81d8d0 50%, #d87d00 100%); /* ティファニーブルー融合バー */
 }
 
 /* ヘッダー・フッターのアクセシビリティ・プレミアム対応 */
@@ -47,7 +47,7 @@ header {
   border-bottom: 2px solid #e2e8f0;
   padding-bottom: 10px;
   margin-bottom: 25px;
-  width: 100%;
+  width: calc(100% - 90px); /* ★ 右上のキャラクターと被らないように幅を制限 */
   font-weight: 500;
   letter-spacing: 0.05em;
 }
@@ -91,7 +91,7 @@ h2 {
 h3 {
   font-size: 18px;
   color: #1a1a1a;
-  border-left: 5px solid #00a3e0; /* DADSセカンダリーカラー: スカイブルー */
+  border-left: 5px solid #00a29a; /* ティファニーブルー調のコントラスト比適合ターコイズ */
   padding-left: 10px;
   margin-top: 15px;
   margin-bottom: 10px;
