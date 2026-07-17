@@ -11,65 +11,87 @@
 section {
   width: 1280px;
   height: 720px;
-  padding: 50px 80px;
+  padding: 60px 80px;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-  font-size: 20px;
+  font-size: 16px; /* ★ トモさん提案: ベースを16pxにして溢れを防止 */
   line-height: 1.6;
-  color: #1a1a1a; /* DADS準拠: 目の疲れを抑えるチャコールグレー */
-  background-color: #ffffff;
+  color: #1a1a1a; /* DADS準拠: チャコールグレー */
+  background: linear-gradient(135deg, #ffffff 60%, #eef3fc 100%); /* ★ プレミアムグラデーション背景 */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
-  overflow-y: auto; /* 画面外にはみ出た場合に縦スクロールで読めるようにし、進行の詰まりを防止 */
+  overflow-y: auto;
+  position: relative;
 }
 
-/* ヘッダー・フッターのアクセシビリティ対応 */
+/* スライドの左端にデジタル庁をイメージした美しいグラデーションアクセントバーを配置 */
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(180deg, #003a94 0%, #00a3e0 50%, #d87d00 100%); /* DADSプライマリー&アクセントの融合バー */
+}
+
+/* ヘッダー・フッターのアクセシビリティ・プレミアム対応 */
 header {
-  font-size: 16px;
-  color: #595959;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 8px;
+  font-size: 14px;
+  color: #4b5563;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
   margin-bottom: 25px;
   width: 100%;
+  font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
 footer {
-  font-size: 14px;
-  color: #595959;
-  border-top: 1px solid #e0e0e0;
-  padding-top: 8px;
+  font-size: 13px;
+  color: #4b5563;
+  border-top: 2px solid #e2e8f0;
+  padding-top: 10px;
   margin-top: auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-weight: 500;
 }
 
 /* 見出しスタイル (コントラスト比 4.5:1 以上の深い青を採用) */
 h1 {
-  font-size: 40px;
-  color: #003a94; /* DADSプライマリーカラー: デジタルブルー */
-  border-left: 8px solid #003a94;
-  padding-left: 15px;
+  font-size: 38px;
+  color: #003a94; /* DADSデジタルブルー */
+  border-left: 10px solid #003a94;
+  padding-left: 20px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   line-height: 1.3;
+  font-weight: 700;
+  /* 文字に上品な立体感を出すための超微細なシャドウ */
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 24px;
   color: #003a94;
-  border-bottom: 2px solid #003a94;
-  padding-bottom: 8px;
+  border-bottom: 3px solid #003a94;
+  padding-bottom: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 18px;
   color: #1a1a1a;
+  border-left: 5px solid #00a3e0; /* DADSセカンダリーカラー: スカイブルー */
+  padding-left: 10px;
   margin-top: 15px;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 /* リスト・段落の余白設定 */
@@ -78,45 +100,61 @@ p {
   margin-bottom: 15px;
 }
 
+/* 箇条書きリストのカラー調整 (デジタルブルーのバレットマーク) */
 ul, ol {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   padding-left: 25px;
 }
 
 li {
   margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+li::marker {
+  color: #003a94; /* 箇条書きの点をデジタルブルーにしてお洒落に */
 }
 
 /* 強調表示 (ユニバーサルカラーの太字 ＆ 色覚特性に配慮した下線) */
 strong {
-  color: #a85200; /* DADS適合: 白背景でコントラスト比4.5:1以上をクリアするダークオレンジ */
+  color: #a85200; /* DADS適合ダークオレンジ */
   font-weight: bold;
-  text-decoration: underline; /* 重要情報を色だけに頼らず形状(下線)でも伝えるDADSアクセシビリティ基準の順守 */
+  text-decoration: underline; /* 色覚多様性対応 */
+  background: rgba(216, 125, 0, 0.08); /* ほんのり背景にハイライトを敷いてプレミアム感を向上 */
+  padding: 0 4px;
+  border-radius: 4px;
 }
 
 /* テーブルスタイル (DADS準拠の明瞭な境界線とコントラスト) */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* 微細なシャドウでカード感を出す */
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 th {
-  background-color: #f4f6f9; /* ニュートラル背景 */
-  color: #1a1a1a;
+  background-color: #003a94;
+  color: #ffffff;
   font-weight: bold;
-  border-bottom: 3px solid #003a94; /* プライマリーブルーの強調 */
-  padding: 8px 10px;
-  text-align: left;
+  padding: 12px 15px;
+  border: 1px solid #003a94;
+  font-size: 15px;
 }
 
 td {
-  border-bottom: 1px solid #e0e0e0;
-  padding: 8px 10px;
-  color: #333333;
+  padding: 10px 15px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+
+tr:nth-child(even) td {
+  background-color: #f8fafc; /* 行ごとにしま模様にして可読性を向上 */
 }
 
 /* コードブロック */
