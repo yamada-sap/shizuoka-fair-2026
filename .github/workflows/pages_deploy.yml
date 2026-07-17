@@ -19,6 +19,8 @@ concurrency:
 
 jobs:
   deploy:
+    # コミットメッセージに '[deploy]' が含まれるか、手動(workflow_dispatch)でトリガーされた場合のみ実行 (Actions枠の消費削減)
+    if: contains(github.event.head_commit.message, '[deploy]') || github.event_name == 'workflow_dispatch'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
