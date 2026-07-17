@@ -30,14 +30,10 @@ jobs:
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      # MarpによるMarkdownからHTMLへの自動ビルド (docs内の.mdを一括変換)
+      # MarpによるMarkdownからHTMLへの自動ビルド (npxコマンドを直接実行)
       - name: Marp Build (Markdown to HTML)
-        uses: marp-team/marp-cli-action@v3
-        with:
-          html: true
-          input-dir: ./docs
-          output-dir: ./output
-          theme-set: ./docs/portrait-theme.css
+        run: |
+          npx @marp-team/marp-cli@latest --html --theme-set ./docs/portrait-theme.css -I ./docs -O ./output
 
       # outputフォルダの中身をデプロイ対象としてアップロード (最新のv3を使用)
       - name: Upload artifact
