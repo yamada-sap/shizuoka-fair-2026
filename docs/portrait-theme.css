@@ -16,7 +16,11 @@ section {
   font-size: 16px; /* ★ トモさん提案: ベースを16pxにして溢れを防止 */
   line-height: 1.6;
   color: #1a1a1a; /* DADS準拠: チャコールグレー */
-  background: linear-gradient(135deg, #ffffff 60%, #eef3fc 100%); /* ★ プレミアムグラデーション背景 */
+  /* ★ プレミアムグラデーション背景 ＆ 右下にマスコットキャラクターをデコレーション配置 */
+  background-image: url("../assets/character.png"), linear-gradient(135deg, #ffffff 60%, #eef3fc 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 40px bottom 15px, center;
+  background-size: 65px auto, cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
