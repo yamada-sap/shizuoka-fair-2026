@@ -35,11 +35,11 @@ jobs:
         run: |
           npx @marp-team/marp-cli@latest --html --theme-set ./docs/portrait-theme.css -I ./docs -O ./output
 
-      # outputフォルダの中身をデプロイ対象としてアップロード (最新のv3を使用)
+      # リポジトリのルート全体をデプロイ対象としてアップロード
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './output'
+          path: '.'
 
       # GitHub Pagesへデプロイ実行 (最新のv4を使用)
       - name: Deploy to GitHub Pages
