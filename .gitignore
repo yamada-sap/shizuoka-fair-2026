@@ -1,19 +1,44 @@
-# 巨大ファイルのGit管理除外
-assets/0612_産業フェア_企画書.pdf
+# ==========================================
+# 産業フェアしずおか2026 Git除外設定 (.gitignore)
+# ==========================================
 
-# OS一時ファイル
+# 1. OS・エディタ・開発環境の一時ファイル
 .DS_Store
 **/.DS_Store
 ._*
 .Spellcheck*
+.vscode/
+.idea/
+*.swp
+*.bak
 
-# Node.js (今後MarpやVite等でパッケージをインストールした時のため)
+# 2. 個人情報・出展者データ・業務Excel・バイナリ文書（ローカルのみ保持）
+mail/
+*.xlsx
+*.xls
+*.csv
+*.pdf
+*.pptx
+*.docx
+
+# 3. 大容量ファイル・成果物・参考資料（ローカルのみ保持）
+output/
+参考　2025年/
+assets/*.png
+assets/*.jpg
+assets/*.jpeg
+
+# 4. 作業用スクラッチ・没データ・エージェント設定
+.gemini_scratch/
+.agent/
+.agents/
+docs/一旦没/
+
+# 5. プログラム依存関係・キャッシュ
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Python (同期スクリプト実行時のキャッシュ除外)
 __pycache__/
 *.pyc
 *.pyo
@@ -23,17 +48,6 @@ __pycache__/
 env/
 venv/
 
-# エディタ設定 (VS Code等)
-.vscode/
-.idea/
-*.swp
-*.bak
-
-# 自動ビルドされるHTMLファイル (GitHub Actions側で生成・デプロイされるためローカルは除外)
+# 6. 自動生成HTML
 *.html
 **/*.html
-!output/ # 必要であればoutputは含む
-
-# 顧客Excelファイル (Git管理除外要請)
-assets/産業フェアしずおか2026_スケジュール管理.xlsx
-assets/★令和８年度 産業フェアしずおか2026運営等業務.xls

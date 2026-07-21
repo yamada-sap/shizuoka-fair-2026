@@ -64,7 +64,7 @@ query($owner: String!, $number: Int!) {
       title
       fields(first: 50) {
         nodes {
-          ... on ProjectV2Field {
+          ... on ProjectV2FieldCommon {
             id
             name
           }
@@ -197,7 +197,9 @@ async function sync() {
   // フィールドのIDマップを作成
   const fieldMap = {};
   for (const field of projectData.fields.nodes) {
-    fieldMap[field.name.toLowerCase()] = field;
+    if (field && field.name) {
+      fieldMap[field.name.toLowerCase()] = field;
+    }
   }
 
   const statusField = fieldMap['status'];
