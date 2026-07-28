@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 🏢 インフルエンサーアサイン会社情報：株式会社NEXTLOCAL
 
 ## 1. 会社・窓口基本情報

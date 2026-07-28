@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 👥 Yamada Digital Partners (YDP) v1.8.4：AI社員名簿 ＆ 役割定義
 
 本ドキュメントは、「産業フェアしずおか2026」プロジェクトを推進するAI共創組織 **Yamada Digital Partners (YDP) v1.8.4** に所属する全21名のAIメンバーおよびペルソナの役割定義・専門領域・RACI責任区分をまとめた名簿です。

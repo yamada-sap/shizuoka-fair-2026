@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 🏷️ 「産業フェアしずおか2026」GTMタグ設置・GA4計測設定タスク指示書
 
 本ドキュメントは、公式サイト特設LPおよび各種WebフォームにおけるGA4（Google Analytics 4）等のアクセストラッキングおよびディスプレイ広告コンバージョン計測を実現するため、Google Tag Manager（GTM）コンテナタグの**「別部署への発行依頼」「HTMLへの設置」「発火疎通テスト」**を誰が担当しても迷わず遂行できるように整理した実務タスク仕様書です。

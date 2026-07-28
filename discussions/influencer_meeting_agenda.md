@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 📐 YDP打合せ準備アジェンダ：インフルエンサーアサイン会社折衝用
 
 - **対象案件**: インフルエンサーマーケティング協業における条件折衝および運用フロー設計

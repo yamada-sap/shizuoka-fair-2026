@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 📖 Notion 🔄 GitHub 双方向同期システム セットアップ手順書
 
 本イベントプロジェクトのMarkdown資料群と、Notionの各ページを双方向に同期するための設定ガイドです。

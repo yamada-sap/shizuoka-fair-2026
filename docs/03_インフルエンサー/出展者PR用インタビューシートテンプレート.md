@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 【配布用】「産業フェアしずおか2026」公式Instagram出展者PR用インタビューシート
 
 公式Instagram運用事務局（株式会社静鉄アド・パートナーズ内）より、出展者の皆様へご案内です。

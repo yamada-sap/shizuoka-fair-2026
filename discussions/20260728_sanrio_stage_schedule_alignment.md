@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 📐 YDP合同討論ログ：サンリオステージ時間帯調整 ＆ 宿泊費削減（日帰りプラン）の検討
 
 ## 1. 討論・意思決定の背景

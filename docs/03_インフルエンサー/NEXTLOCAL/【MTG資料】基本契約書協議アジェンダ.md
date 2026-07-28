@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 【MTG協議資料】基本契約書に関する調整・協議事項
 
 * **日時:** 2026年 [月] [日] [時]〜

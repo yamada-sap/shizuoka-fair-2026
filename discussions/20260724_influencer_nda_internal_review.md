@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 📐 YDP合意形成討論ログ：インフルエンサー投稿構成案およびNDA締結の社内確認プロセス移行の決定
 
 - **対象案件**: インフルエンサーの投稿構成およびNDA（秘密保持契約）締結のステータス更新

@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 📖 Instagram掲載情報回収用 Googleフォーム作成・設定マニュアル
 
 本マニュアルは、「産業フェアしずおか2026」の出展者から公式WEB・Instagramに掲載する紹介テキストや画像データを回収するための、Googleフォーム作成手順書です。

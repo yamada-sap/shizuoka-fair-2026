@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 📐 YDP合意形成討論ログ：TVCM制作・放映シミュレーション会議
 
 - **対象案件**: 静岡県内地上波TVCM（15秒）の局選定・予算配分シミュレーション、および制作構成（絵コンテ案）の策定

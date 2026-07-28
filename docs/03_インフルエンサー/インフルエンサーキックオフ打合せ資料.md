@@ -1,6 +1,7 @@
 ---
 marp: true
 theme: tiffany-theme
+paginate: true
 ---
 
 <!-- _class: title -->

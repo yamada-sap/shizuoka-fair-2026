@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 📐 YDP合意形成討論ログ：NEXTLOCAL向けスケジュール大枠合意用メール案の策定
 
 - **対象案件**: インフルエンサーPRおよび公式Instagram運用におけるNEXTLOCAL向け大枠スケジュール確認メール案の合意

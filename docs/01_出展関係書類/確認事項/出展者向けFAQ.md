@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 📑 産業フェアしずおか2026 出展者向けよくある質問（FAQ集）
 
 出展者様からの問い合わせ削減と、事務局の対応工数軽減のためのFAQ集です。

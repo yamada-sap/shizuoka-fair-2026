@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 📐 YDP合意形成討論ログ：NEXTLOCALメール送付保留および封筒用シール納品完了の決定
 
 - **対象案件**: 

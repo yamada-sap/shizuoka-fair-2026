@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 📐 YDP合同討論ログ：詳細実行タスクの追加抽出と安全対策強化
 
 - **対象案件**: 産業フェアしずおか2026における実務タスクの抜け漏れ抽出とリスク監査

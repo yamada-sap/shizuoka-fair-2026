@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # ADR-005-raci-realignment-and-absolute-expression-elimination
 
 - **ステータス**: 承認済み（山田プロデューサー承認）

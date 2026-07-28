@@ -1,3 +1,11 @@
+---
+marp: true
+theme: tiffany-theme
+paginate: true
+---
+
+<!-- _class: title -->
+
 # 📖 GitHub Pages スマホ用スライド自動公開 設定手順書
 
 本リポジトリ内の `output/` フォルダにあるMarpスライドのHTMLやPDFファイルを、スマホのブラウザからURLで直接アクセスし、スライドショーのように左右スワイプで閲覧するための自動公開（GitHub Pages）の設定ガイドです。
