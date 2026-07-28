@@ -273,3 +273,18 @@ graph TD
 ---
 **更新日**：2026年7月28日  
 **作成者**：プロモーション・広告運用部（山田） / AIアシスタント（Antigravity）
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false });
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+      const pre = el.parentElement;
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = el.textContent;
+      pre.replaceWith(div);
+    });
+    mermaid.run();
+  });
+</script>
