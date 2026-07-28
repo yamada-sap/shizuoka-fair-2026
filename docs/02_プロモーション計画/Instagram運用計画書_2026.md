@@ -319,3 +319,19 @@ gantt
 - [ ] **【商用音源の適用】** 投稿で使用するリール動画のBGMタグが、ビジネスライブラリから正しく選択されているか？
 - [ ] **【旧事務局情報の排除】** エイエイピー（AAP）等の旧事務局の残骸（旧担当者名、旧連絡先、旧ロゴ等）が1文字も入っていないか？（静鉄アドの正規事務局情報になっているか）
 - [ ] **【プライバシーモザイク処理】** 投稿やリールに使用する写真や動画内で、一般来場者（特に子ども）の顔が特定できないよう、必要に応じてぼかし処理が施されているか？
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false });
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+      const pre = el.parentElement;
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = el.textContent;
+      pre.replaceWith(div);
+    });
+    mermaid.run();
+  });
+</script>

@@ -147,3 +147,19 @@ GTMのアカウントおよびコンテナタグの発行は別部署が管理�
 > [!TIP]
 > **UTMパラメータとの連動**
 > タグ埋め込み完了後は、Google/Yahoo/Instagram広告で設定したUTMパラメータ（例：`?utm_source=google&utm_medium=cpc&...`）付きURLでアクセステストし、GA4の「セッションの参照元/メディア」に正しく反映されるか合わせて確認してください。
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false });
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+      const pre = el.parentElement;
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = el.textContent;
+      pre.replaceWith(div);
+    });
+    mermaid.run();
+  });
+</script>

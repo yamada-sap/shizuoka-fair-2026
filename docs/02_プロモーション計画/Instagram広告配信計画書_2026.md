@@ -341,3 +341,19 @@ gantt
 - [ ] **【商用BGM・音源タグチェック】** 広告に使用する映像に、一般のトレンドポップス（著作権侵害リスクあり）が使われておらず、商用利用可能な無料・フリー音源が正しくマッピングされているか？
 - [ ] **【個人情報・顔画像モザイク】** 広告用クリエイティブで使用する写真や動画内で、一般来場者（特に子ども）の顔が露出していないか、プライバシー保護のモザイク処理が適用されているか？
 - [ ] **【旧事務局情報の排除】** 広告のリンク先特設Webサイトやクリエイティブ内に、旧事務局（エイエイピー、AAPなど）の旧連絡先・ロゴ・担当者名が1ピクセル、1文字たりとも残っていないか？（静鉄アドの正規事務局情報になっているか）
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false });
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+      const pre = el.parentElement;
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = el.textContent;
+      pre.replaceWith(div);
+    });
+    mermaid.run();
+  });
+</script>

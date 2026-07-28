@@ -177,3 +177,19 @@ Yahoo!ディスプレイ広告およびLINE広告配信枠に適合させるた�
 - [ ] **【LINE配信面の有効化】** アドネットワーク配信先としてLINE（LINEアプリ内）が正しく含まれているか？（プレースメント除外でLINEを除外していないか確認）
 - [ ] **【遷移先URLおよび測定タグ】** 遷移先URLが公式サイト特設LPに指定され、かつ効果計測用のYahoo!広告用URLパラメータ（utm_source=yahoo&utm_medium=cpc&utm_campaign=yda2026）が設定されているか？
 - [ ] **【画像アセットの表示領域確認】** レスポンシブ画像がトリミングされた際に、最も見せたい要素（しらす丼のメイン部や、工作中の子どもの表情）が画面外に切れていないか？
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false });
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+      const pre = el.parentElement;
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = el.textContent;
+      pre.replaceWith(div);
+    });
+    mermaid.run();
+  });
+</script>

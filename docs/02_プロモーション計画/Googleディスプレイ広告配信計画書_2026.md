@@ -180,3 +180,19 @@ Googleの機械学習（AI）による自動組み合わせ最適化を最大限
 - [ ] **【遷移先URL】** 広告クリック後のランディングページが、「産業フェアしずおか2026 公式サイト特設LP（https://...）」に正しく設定されており、かつGoogleアナリティクス測定用のパラメータ（utm_source=google&utm_medium=cpc&utm_campaign=gdn2026）が付与されているか？
 - [ ] **【配信除外カテゴリ】** 「アダルト・デリケートなコンテンツ」や「不適切なプレースメント（ゲーム内広告や子ども向けYouTubeチャンネル等）」がプレースメント除外設定されているか？
 
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false });
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+      const pre = el.parentElement;
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = el.textContent;
+      pre.replaceWith(div);
+    });
+    mermaid.run();
+  });
+</script>
