@@ -23,7 +23,9 @@ paginate: true
 
 ## 2. 担当・キャスティング枠概要
 
-- **決定金額**: **220,000円（税込）**（交通費・現地体験実費等の諸経費込み受託額FIX）
+- **決定金額**: **合計 430,000円（税込）**
+  - **インフルエンサーアサイン費用**: 220,000円（税込・実費諸経費込み）
+  - **公式Instagram運用代行費用**: 210,000円（税込）
 - **アサインキャスト**:
   1. **静岡県コンシェルジュ**（[`@shizuoka_info`](https://www.instagram.com/shizuoka_info/)）
   2. **静岡散歩日記**（[`@shizuokaosanponikki`](https://www.instagram.com/shizuokaosanponikki/)）
