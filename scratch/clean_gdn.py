@@ -1,4 +1,8 @@
----
+import re
+
+path = "docs/02_プロモーション計画/Googleディスプレイ広告配信計画書_2026.md"
+
+content = """---
 marp: true
 theme: tiffany-theme
 paginate: true
@@ -296,3 +300,9 @@ Googleのレスポンシブディスプレイ広告（RDA）は、複数の見�
     mermaid.run();
   });
 </script>
+"""
+
+with open(path, "w", encoding="utf-8") as f:
+    f.write(content)
+
+print("SUCCESSFULLY REWRITTEN")

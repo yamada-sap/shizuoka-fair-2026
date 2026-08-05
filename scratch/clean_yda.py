@@ -1,4 +1,6 @@
----
+path = "docs/02_プロモーション計画/Yahooディスプレイ広告配信計画書_2026.md"
+
+content = """---
 marp: true
 theme: tiffany-theme
 paginate: true
@@ -249,3 +251,9 @@ LINEトークリスト最上部に表示される静止画広告は、ユーザ�
     mermaid.run();
   });
 </script>
+"""
+
+with open(path, "w", encoding="utf-8") as f:
+    f.write(content)
+
+print("YDA PLAN CLEANED")
