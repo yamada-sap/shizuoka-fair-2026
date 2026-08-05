@@ -8,6 +8,16 @@
    YDPデザイン・アクセシビリティ方針 (デジタル庁DADS準拠) 16:9 横型スライドテーマ
    ========================================================================== */
 
+/* ページ読み込み時に要素が段階表示（フラグメント）で隠れるのを防ぎ、最初から全要素を100%表示する設定 */
+[data-marpit-fragment],
+[data-marpit-fragment="inactive"],
+[data-marpit-fragment="active"] {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
 section {
   width: 1280px;
   height: 720px;
