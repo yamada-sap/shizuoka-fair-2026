@@ -27,9 +27,14 @@ output/
 assets/*.png
 assets/*.jpg
 assets/*.jpeg
+*.ai
+*.psd
+*.eps
+Design/ポスター/
 
 # 4. 作業用スクラッチ・没データ・エージェント設定
 .gemini_scratch/
+scratch/
 .agent/
 .agents/
 docs/一旦没/
