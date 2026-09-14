@@ -24,13 +24,15 @@ mail/
 # 3. 大容量ファイル・成果物・参考資料（ローカルのみ保持）
 output/
 参考　2025年/
-assets/*.png
-assets/*.jpg
-assets/*.jpeg
+assets/
+Design/
+*.mov
+*.mp4
+*.m4v
+*.avi
 *.ai
 *.psd
 *.eps
-Design/ポスター/
 
 # 4. 作業用スクラッチ・没データ・エージェント設定
 .gemini_scratch/

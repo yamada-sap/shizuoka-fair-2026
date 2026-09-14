@@ -60,6 +60,7 @@
 
 ### 📢 3. プロモーション・広報計画
 
+- **[クライアント説明用 WEBプロモーション統合計画書](./docs/02_プロモーション計画/クライアント説明用_WEBプロモーション統合計画書_2026.md)** ｜ **[🌐 Webスライド](https://yamada-sap.github.io/shizuoka-fair-2026/docs/02_%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%A8%88%E7%94%BB/%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E8%AA%AC%E6%98%8E%E7%94%A8_WEB%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E7%B5%B1%E5%90%88%E8%A8%88%E7%94%BB%E6%9B%B8_2026.html)**
 - **[Instagram広告配信計画書](./docs/02_プロモーション計画/Instagram広告配信計画書_2026.md)** ｜ **[🌐 Webスライド](https://yamada-sap.github.io/shizuoka-fair-2026/docs/02_%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%A8%88%E7%94%BB/Instagram%E5%BA%83%E5%91%8A%E9%85%8D%E4%BF%A1%E8%A8%88%E7%94%BB%E6%9B%B8_2026.html)**
 - **[Instagram運用計画書](./docs/02_プロモーション計画/Instagram運用計画書_2026.md)** ｜ **[🌐 Webスライド](https://yamada-sap.github.io/shizuoka-fair-2026/docs/02_%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%A8%88%E7%94%BB/Instagram%E9%81%8B%E7%94%A8%E8%A8%88%E7%94%BB%E6%9B%B8_2026.html)**
 - **[Googleディスプレイ広告配信計画書](./docs/02_プロモーション計画/Googleディスプレイ広告配信計画書_2026.md)** ｜ **[🌐 Webスライド](https://yamada-sap.github.io/shizuoka-fair-2026/docs/02_%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%A8%88%E7%94%BB/Google%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E5%BA%83%E5%91%8A%E9%85%8D%E4%BF%A1%E8%A8%88%E7%94%BB%E6%9B%B8_2026.html)**
