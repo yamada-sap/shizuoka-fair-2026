@@ -241,9 +241,9 @@ for ci, h in enumerate(["媒体名", "主な役割と特徴", "表示見込み"]
 
 rows3 = [
     ("テレビCM\n（マス媒体）", "県内全域のリビングへ開催とお祭り感を一気に浸透", "県内放送"),
-    ("Google広告\n（WEBバナー）", "ニュースやYouTube等、日常ネット閲覧時の確実な刷り込み", "約134.1万回"),
-    ("Yahoo!・LINE広告\n（スマホ通知）", "県民大半の日常アプリ（LINEトーク最上部等）での接触", "約134.1万回"),
-    ("Instagram広告\n（SNS広告）", "子育て世代へ写真・カルーセル・人気投稿で直感訴求", "約28.3万回"),
+    ("Google広告\n（WEBバナー）", "ニュースやYouTube等、日常ネット閲覧時の確実な刷り込み", "約142.9万回"),
+    ("Yahoo!・LINE広告\n（スマホ通知）", "県民大半の日常アプリ（LINEトーク最上部等）での接触", "約125.0万回"),
+    ("Instagram広告\n（SNS広告）", "子育て世代へ写真・カルーセル・人気投稿で直感訴求", "約28.8万回"),
 ]
 row_bgs = [GRAY1, WHITE, GRAY1, WHITE]
 for ri, (r0, r1, r2) in enumerate(rows3):
@@ -265,9 +265,9 @@ line(s3, Inches(9.1), Inches(2.88), Inches(3.8), Inches(0.02), GRAY1)
 # バーチャート（3媒体の比率を視覚化）
 BAR_MAX = Inches(3.5)  # 100%の幅
 bar_items = [
-    ("Google広告",      134.1, 296.6, NAVY,   "約134.1万回  45%"),
-    ("Yahoo!/LINE広告", 134.1, 296.6, BLUE,   "約134.1万回  45%"),
-    ("Instagram広告",    28.4, 296.6, AMBER,  "約28.4万回   10%"),
+    ("Google広告",      142.9, 296.6, NAVY,   "約142.9万回  48%"),
+    ("Yahoo!/LINE広告", 125.0, 296.6, BLUE,   "約125.0万回  42%"),
+    ("Instagram広告",    28.8, 296.6, AMBER,  "約28.8万回   10%"),
 ]
 by = Inches(3.05)
 for b_label, b_val, b_total, b_col, b_txt in bar_items:
@@ -1086,7 +1086,7 @@ p(f20_b, "・ 8市町にお住まいの25〜45歳で、子育てやイベント�
 # ─────────────────────────────────────────
 s21 = prs.slides.add_slide(blank)
 chap_header(s21, 21, "第12・13章", "Google広告戦略：掲載場所と配信の仕組み",
-            "地元のニュースサイトやブログ、YouTube画面へ約134.1万回表示。関心・検索語句で捕捉")
+            "地元のニュースサイトやブログ、YouTube画面へ約142.9万回表示。関心・検索語句で捕捉")
 
 line(s21, Inches(0.7), Inches(1.75), Inches(0.045), Inches(5.0), NAVY)
 f21_lt = tb(s21, Inches(0.9), Inches(1.75), Inches(5.5), Inches(0.42))
@@ -1115,7 +1115,7 @@ for g_title, g_desc in [
 # ─────────────────────────────────────────
 s22 = prs.slides.add_slide(blank)
 chap_header(s22, 22, "第14・15章", "Yahoo!・LINE広告戦略：掲載場所とターゲティング",
-            "LINEトーク最上部＆Yahoo!トップ画面。全世代を網羅する日常動線へ約134.1万回表示")
+            "LINEトーク最上部＆Yahoo!トップ画面。全世代を網羅する日常動線へ約125.0万回表示")
 
 line(s22, Inches(0.7), Inches(1.75), Inches(0.045), Inches(5.0), GREEN)
 f22_lt = tb(s22, Inches(0.9), Inches(1.75), Inches(5.5), Inches(0.42))

@@ -216,9 +216,9 @@ for i, h in enumerate(h3):
 
 r3 = [
     ("テレビCM\n（マス媒体）", "県内全域のリビングへ開催とお祭り感を一気に浸透", "県内放送"),
-    ("Google広告\n（WEBバナー）", "ニュースやYouTube等、日常ネット閲覧時の確実な刷り込み", "約134.1万回"),
-    ("Yahoo!・LINE広告\n（スマホ通知）", "県民大半の日常アプリ（LINEトーク最上部等）での接触", "約134.1万回"),
-    ("Instagram広告\n（SNS広告）", "子育て世代へ写真・カルーセル・人気投稿で直感訴求", "約 28.3万回")
+    ("Google広告\n（WEBバナー）", "ニュースやYouTube等、日常ネット閲覧時の確実な刷り込み", "約142.9万回"),
+    ("Yahoo!・LINE広告\n（スマホ通知）", "県民大半の日常アプリ（LINEトーク最上部等）での接触", "約125.0万回"),
+    ("Instagram広告\n（SNS広告）", "子育て世代へ写真・カルーセル・人気投稿で直感訴求", "約28.8万回")
 ]
 for r_i, r_data in enumerate(r3, start=1):
     for c_i, val in enumerate(r_data):
@@ -253,7 +253,7 @@ p_val.space_before = Pt(4)
 p_val.space_after = Pt(8)
 
 p_break = tf3_m.add_paragraph()
-p_break.text = "【内訳】\n・ Google広告：約134.1万回 (45%)\n・ Yahoo!/LINE：約134.1万回 (45%)\n・ Instagram：約28.3万回 (10%)\n\n※静岡県内8市町限定配信により、対象世帯へ期間中複数回確実にリーチします。"
+p_break.text = "【内訳】\n・ Google広告：約142.9万回 (48%)\n・ Yahoo!/LINE：約125.0万回 (42%)\n・ Instagram：約28.8万回 (10%)\n\n※静岡県内8市町限定配信により、対象世帯へ期間中複数回確実にリーチします。"
 p_break.font.size = Pt(10)
 p_break.font.color.rgb = C_TEXT_DARK
 
@@ -1554,7 +1554,7 @@ p2.space_before = Pt(3)
 # Slide 21: Google Ads Strategy (第12・13章 Google広告)
 # ====================================================
 s21 = prs.slides.add_slide(blank_layout)
-add_header(s21, "Google Display Ads", "第12・13章：Google広告戦略：掲載場所と配信の仕組み", "地元のニュースサイトやブログ、YouTube画面へ約134.1万回表示。関心・検索語句で捕捉")
+add_header(s21, "Google Display Ads", "第12・13章：Google広告戦略：掲載場所と配信の仕組み", "地元のニュースサイトやブログ、YouTube画面へ約142.9万回表示。関心・検索語句で捕捉")
 
 add_card(s21, Inches(0.8), Inches(1.6), Inches(5.6), Inches(5.3))
 tb21_l = s21.shapes.add_textbox(Inches(1.0), Inches(1.8), Inches(5.2), Inches(4.9))
@@ -1600,7 +1600,7 @@ g_target_details = [
     ("子ども・子育て向け", "未就学児・小学生の子どもを持つ保護者、家族レジャーに関心のある層"),
     ("検索キーワード連動（カスタム）", "「静岡市 イベント」「ツインメッセ」「ポムポムプリン」「シナモロール」「木工体験」「よしもとお笑い」などを最近検索した人"),
     ("地場産業・グルメ関心層", "静岡グルメ、物産展、DIY、伝統工芸に関心のある幅広い県民"),
-    ("想定表示回数", "静岡県内8市町限定で 約134.1万回 の表示を予定")
+    ("想定表示回数", "静岡県内8市町限定で 約142.9万回 の表示を予定")
 ]
 for gt, gd in g_target_details:
     p_t = tf21_r.add_paragraph()
@@ -1619,7 +1619,7 @@ for gt, gd in g_target_details:
 # Slide 22: Yahoo! & LINE Ads Strategy (第14・15章 Yahoo/LINE)
 # ====================================================
 s22 = prs.slides.add_slide(blank_layout)
-add_header(s22, "Yahoo! & LINE Ads", "第14・15章：Yahoo!・LINE広告戦略：掲載場所とターゲティング", "LINEトーク最上部＆Yahoo!トップ画面。全世代を網羅する日常動線へ約134.1万回表示")
+add_header(s22, "Yahoo! & LINE Ads", "第14・15章：Yahoo!・LINE広告戦略：掲載場所とターゲティング", "LINEトーク最上部＆Yahoo!トップ画面。全世代を網羅する日常動線へ約125.0万回表示")
 
 add_card(s22, Inches(0.8), Inches(1.6), Inches(5.6), Inches(5.3))
 tb22_l = s22.shapes.add_textbox(Inches(1.0), Inches(1.8), Inches(5.2), Inches(4.9))
@@ -1664,7 +1664,7 @@ p.font.color.rgb = C_NAVY
 y_target_details = [
     ("Yahoo!検索キーワード（サーチターゲティング）", "直近で「静岡 イベント」「週末 お出かけ」「サンリオ」「お笑いライブ」などを検索した人に狙い撃ち配信。"),
     ("LINE興味・関心ターゲティング", "「ショッピング・グルメ」「ファミリー・子育て」「レジャー」など、登録行動データに基づく高精度ターゲティング。"),
-    ("想定表示回数", "静岡県内8市町限定で 約134.1万回 の表示を予定（Googleと同規模の強力な動線）")
+    ("想定表示回数", "静岡県内8市町限定で 約125.0万回 の表示を予定")
 ]
 for yt, yd in y_target_details:
     p_t = tf22_r.add_paragraph()
