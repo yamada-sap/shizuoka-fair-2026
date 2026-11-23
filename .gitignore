@@ -14,8 +14,11 @@
 
 # 2. 個人情報・出展者データ・業務Excel・バイナリ文書（ローカルのみ保持）
 mail/
+Instagram投稿/
+*.zip
 *.xlsx
 !アンケート/提出用/*.xlsx
+!スタッフマニュアル/*.xlsx
 *.xls
 *.csv
 *.pdf
